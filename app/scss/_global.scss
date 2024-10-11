@@ -1,0 +1,15 @@
+.logo{
+    font-size: 36px;
+    line-height: 58px;
+    font-weight: bold;
+    color: $title;
+    position: relative;
+    padding-left: 65px;
+    @extend %rubik-500;
+}
+.logo::before{
+    content: url('../images/logo.svg');
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
