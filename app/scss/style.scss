@@ -30,10 +30,11 @@
     &__list-link {
         font-size: 15px;
         line-height: 12px;
-        font-weight: bold;
         color: $title;
         @extend %rubik-500;
+        padding: 0 2px 1px;
     }
+      
 }
 
 .user-nav {
