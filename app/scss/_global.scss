@@ -1,3 +1,17 @@
+html,
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    font-size: 14px;
+    line-height: 32px;
+    @extend %rubik-400;
+}
+.main{
+    flex-grow: 1;
+}
 .logo{
     font-size: 36px;
     line-height: 58px;
@@ -12,4 +26,9 @@
     position: absolute;
     left: 0;
     top: 6px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
