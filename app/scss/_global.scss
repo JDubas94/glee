@@ -42,10 +42,27 @@ body {
     left: 0;
     top: 6px;
 }
-.title{
+
+.title {
     text-align: center;
     font-size: 36px;
     color: #191919;
     @extend %roboto-700;
     padding-bottom: 35px;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-link {
+    font-size: 16px;
+    color: #8b8b8b;
+    @extend %roboto-700;
+    transition: all .3s;
+
+    &:hover {
+        color: #292929;
+    }
 }
