@@ -273,10 +273,8 @@
     }
 
     &__link {
-        font-size: 15px;
-        line-height: 12px;
+        @extend %btn;
         color: #ffffff;
-        @extend %rubik-500;
         padding: 24px 100px 24px 27px;
         background-color: #a3bbc8;
         position: relative;
@@ -389,7 +387,7 @@
 }
 
 .products {
-    padding: 75px 0;
+    padding: 75px 0 75px;
 
 
     &__menu-item+.products__menu-item {
@@ -427,7 +425,7 @@
         justify-content: center;
         align-items: center;
         transform: translateY(500%);
-}
+    }
 
     &__item-link {
         padding: 12px 12px 2px 12px;
@@ -443,9 +441,10 @@
 
     }
 
-    &__item-link:hover{
+    &__item-link:hover {
         background-color: #a3bbc8;
-        path{
+
+        path {
             fill: #f5f8f9;
         }
     }
@@ -466,7 +465,7 @@
 
 
 .design {
-    padding: 100px 0 120px;
+    padding: 50px 0 120px;
 
     &__menu-item+.design__menu-item {
         padding-left: 30px;
@@ -520,5 +519,73 @@
     align-items: center;
 }
 
+.lamp {
+    padding: 115px 0 40px;
+
+    &__inner {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        width: 870px;
+        height: 388px;
+        background-color: #feefe2;
+        position: relative;
+    }
+
+    &__images {
+        position: absolute;
+        top: -100px;
+        left: 156px;
+    }
+
+    &__content {
+        position: absolute;
+        max-width: 340px;
+        top: 87px;
+    }
+    &__content--left{
+        top: 95px;
+        right: 88px;
+    }
+    &__content--right{
+        top: 79px;
+        right: 65px;
+    }
+    &__title{
+        font-size: 26px;
+        line-height: 32px;
+        color: $subtitle;
+        @extend %roboto-700;
+        margin-bottom: 18px;
+    }
+
+    &__text{
+        line-height: 24px;
+        color: $subtitle;
+        @extend %rubik-500;
+        margin-bottom: 40px;
+    }
+    &__link {
+        @extend%btn;
+        padding: 24px 100px 24px 27px;
+        color: #436372;
+        font-weight: bold;
+        position: relative;
+        border: 1px solid #b3b7b5;
+        padding: 21px 84px 23px 18px;
+        border-radius: 6px;
+
+        &::after{
+            content: url('../images/lamp-arrow.svg');
+            position: absolute;
+            right: 18px;
+            top: 26px;
+        }
+    }
+}
+
+  
 
 @import 'media';
