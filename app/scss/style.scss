@@ -915,7 +915,36 @@
         color: #4c4c4c;
     }
 }
-
+.about-us{
+    padding: 87px 0 81px;
+    background-color: #fcd7b6;
+    &__items{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item{
+        text-align: center;
+        display: block;
+    }
+    &__images{
+        margin: 0 auto 20px;
+        width: 73px;
+        height: 69px;
+    }
+    &__number{
+        font-size: 36px;
+        line-height: 32px;
+        color: #243f4d;
+        @extend %roboto-700;
+        margin-bottom: 22px;
+    }
+    &__subtitle{
+        font-size: 18px;
+        line-height: 32px;
+        color: #243f4d;
+        @extend %roboto-700;
+    }
+}
 
 
 
