@@ -686,6 +686,7 @@
 .partners{
     padding: 88px 0 91px;
     background-color: #fef7f0;
+    height: 247px;
     &__list{
         display: flex;
         justify-content: space-around;
@@ -695,6 +696,81 @@
     &__img{
         display: block;
         width: 100%;
+    }
+}
+.top{
+    background-color: #edf1f4;
+    &__inner{
+        padding: 30px 0;
+        margin: 0 auto;
+    }
+    &__title{
+        text-align: center;
+        font-size: 36px;
+        line-height: 24px;
+        color: #222933;
+        @extend %rubik-300;
+        margin-bottom: 9px;
+    }
+
+}
+.modal{
+    padding: 120px 0;
+    max-width: 475px;
+    margin: 0 auto;
+    @extend %rubik-500;
+    &__container{
+        padding: 0;
+    }
+    &__form{
+        border-bottom: 2px solid #f6f6f6;
+    }
+    &__label{
+        color: #436372;
+        margin-bottom: 15px;
+    }
+    &__input{
+        width: 100%;
+        border: 2px solid #f6f6f6;
+        margin-bottom: 25px;
+    }
+    &__button{
+        padding: 20px 209px;
+        border: none;
+        background-color: #a3bbc8;
+        font-size: 18px;
+        color: #fffefe;
+        margin: 10px 0 33px;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        color: #436372;
+        line-height: 48px;
+    }
+    &__link{
+        color: #436372;
+        line-height: 48px;
+        @extend %rubik-500;
+    }
+}
+.modal-account{
+    padding-top: 30px;
+    &__title{
+        text-align: center;
+        line-height: 24px;
+        color: #436372;
+        @extend %rubik-500;
+        margin-bottom: 23px;
+    }
+    &__button{
+        width: 100%;
+        padding: 20px 150px;
+        font-size: 18px;
+        color: #243f4d;
+        @extend %rubik-500;
+        background-color: transparent;
+        border: 2px solid #a3bbc8;
     }
 }
 

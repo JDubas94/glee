@@ -66,3 +66,37 @@ body {
         color: #292929;
     }
 }
+.breadcrumbs{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    &__list{
+        display: flex;
+    }
+    &__item{
+        padding-left: 16px;
+        margin-right: 8px;
+        position: relative;
+        &::before{
+            content: '/';
+            position: absolute;
+            width: 7px;
+            height: 13px;
+            top: 0;
+            left: 0;
+            color: #737980;
+            @extend %rubik-500;
+            display: none;
+        }
+        &:last-child{
+            &::before{
+            display: block;
+            }
+        }
+    }
+    &__link{
+        line-height: 24px;
+        color: #737980;
+        @extend %rubik-500;
+    }
+}
