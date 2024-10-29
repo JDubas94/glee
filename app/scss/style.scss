@@ -571,7 +571,7 @@
     }
 
     &__link {
-        @extend%btn;
+        @extend %btn;
         padding: 24px 100px 24px 27px;
         color: #436372;
         font-weight: bold;
@@ -590,7 +590,7 @@
 }
 
 .blog {
-    background: linear-gradient(to top, #fef7f0 50.5%, #ffffff 40%)
+    background: linear-gradient(to top, #fef7f0 48.5%, #ffffff 40%)
 }
 
 
@@ -680,12 +680,16 @@
 
     &__info {
         font-size: 12px;
-        color: #222933;
         @extend %rubik-500;
     }
 
     &__info-data {
+        color: #222933;
         margin-right: 30px;
+    }
+
+    &__info-author {
+        color: #222933;
     }
 
 }
@@ -888,17 +892,20 @@
         height: 38px;
         background-image: url('../images/icons/notebook.svg');
     }
-    &__info-item--megaphone::before{
+
+    &__info-item--megaphone::before {
         width: 44px;
         height: 40px;
         background-image: url('../images/icons/megaphone.svg');
     }
-    &__info-item--awards::before{
+
+    &__info-item--awards::before {
         width: 43px;
         height: 42px;
         background-image: url('../images/icons/awards.svg');
     }
-    &__info-item--awards{
+
+    &__info-item--awards {
         border: none;
     }
 
@@ -915,35 +922,141 @@
         color: #4c4c4c;
     }
 }
-.about-us{
+
+.about-us {
     padding: 87px 0 81px;
     background-color: #fcd7b6;
-    &__items{
+
+    &__items {
         display: flex;
         justify-content: space-around;
     }
-    &__item{
+
+    &__item {
         text-align: center;
         display: block;
     }
-    &__images{
+
+    &__images {
         margin: 0 auto 20px;
         width: 73px;
         height: 69px;
     }
-    &__number{
+
+    &__number {
         font-size: 36px;
         line-height: 32px;
         color: #243f4d;
         @extend %roboto-700;
         margin-bottom: 22px;
     }
-    &__subtitle{
+
+    &__subtitle {
         font-size: 18px;
         line-height: 32px;
         color: #243f4d;
         @extend %roboto-700;
     }
+}
+
+.team {
+    padding: 123px 0 40px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        max-width: 313px;
+    }
+
+    &__title {
+        line-height: 32px;
+        text-align: left;
+        color: #243f4d;
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        @extend %rubik-500;
+        margin-bottom: 42px;
+    }
+
+    &__link {
+        padding: 19px 59px 17px 18px;
+        font-size: 15px;
+        line-height: 55px;
+        @extend %poppins-700;
+        color: #ffffff;
+        background-color: #a3bbc8;
+        border-radius: 5px;
+        position: relative;
+
+        &::after {
+            content: url('../images/team-arrow.svg');
+            position: absolute;
+            right: 26px;
+            top: 3px;
+            width: 15px;
+            height: 11px;
+
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 100px 20px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__content {
+        position: absolute;
+        padding: 27px 0 28px;
+        width: 328px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        bottom: -62px;
+        left: 0;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    }
+
+    &__name {
+        font-size: 22px;
+        line-height: 26px;
+        color: #436372;
+        @extend %roboto-700;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;
+        @extend %rubik-500;
+    }
+
+    &__social {
+        display: flex;
+        padding-top: 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__social-link {
+        padding: 12px 11px 11px 12px;
+        background-color: #f6f6f6;
+        border-radius: 50%;
+    }
+
 }
 
 
