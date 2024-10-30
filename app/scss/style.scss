@@ -1059,6 +1059,42 @@
 
 }
 
+.information{
+    padding-top: 116px;
+    &__item{
+        margin-bottom: 71px;
+    }
+    &__title{
+        text-align: left;
+        font-size: 24px;
+        line-height: 40px;
+        color: #243f4d;
+        @extend %rubik-500;
+        margin-bottom: 25px;
+    }
+    &__list{
+        list-style: decimal-leading-zero;
+        max-width: 1170px;
+        padding-left: 30px;
+    }
+    &__list-item{
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        @extend %rubik-400;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        @extend %rubik-400;
+    }
+}
+
+
+
 
 
 @import 'media';
