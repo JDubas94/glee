@@ -90,12 +90,11 @@ body {
             left: 0;
             color: #737980;
             @extend %rubik-500;
-            display: none;
         }
 
-        &:last-child {
+        &:first-child {
             &::before {
-                display: block;
+                display: none;
             }
         }
     }
