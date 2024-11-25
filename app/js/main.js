@@ -1,5 +1,6 @@
 $(function () {
 
+
     $('.product-related__slider').slick({
         slidesToShow: 4,
         slidesToScroll: 4,

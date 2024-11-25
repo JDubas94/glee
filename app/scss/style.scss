@@ -2176,8 +2176,120 @@
         text-align: center;
         text-transform: uppercase;
         color: #fff;
+        cursor: pointer;
     }
 }
+
+.contact-info {
+    padding: 120px 0 130px;
+
+    &__subtitle {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        color: #a3bbc8;
+        @extend %poppins-700;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 35px;
+        line-height: 57px;
+        color: $header;
+        @extend %roboto-700;
+        margin-bottom: 70px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        width: 370px;
+        height: 380px;
+        text-align: center;
+        background-color: #fbfbfb;
+        & +.contact-info__item{
+            margin-left: 30px;
+        }
+    
+        
+        &+.contact-info__item--active{
+            border: 2px solid #a3bbc8;
+            .contact-info__img-box{
+                background-color: #a3bbc8;
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
+    &__img-box {
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 70px auto 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        path {
+            fill: #a3bbc8;
+        }
+    }
+
+    &__item-img {
+        width: 32px;
+        height: 44px;
+    }
+
+    &__item-title {
+        font-size: 20px;
+        color: #222222;
+        @extend %roboto-700;
+        margin-bottom: 10px;
+    }
+
+    &__adress,
+    &__email,
+    &__phone,
+    &__link-phone{
+        font-size: 16px;
+        color: #565872;
+    }
+}
+
+.contact-form{
+    &__inner{
+        display: flex;
+
+        .form-comments{
+            width: 620px;
+            margin-right: 60px;
+            text-transform: uppercase;
+            padding-bottom: 60px;
+        }
+
+        .form-comments__input{
+            width: 300px;
+        }
+
+        .form-comments__textarea{
+            width: 620px;
+            height: 175px;
+        }
+    }
+}
+#map{
+    width: 500px;
+    height: 333px
+}
+
+
+
 
 
 
