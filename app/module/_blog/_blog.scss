@@ -1,0 +1,122 @@
+.blog {
+    background: linear-gradient(to top, #fef7f0 48.5%, #ffffff 40%)
+}
+
+
+.blog-top {
+    padding-top: 112px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 46px;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: #1a1a1a;
+        @extend %roboto-700;
+    }
+
+    &__link {
+        padding-right: 25px;
+        color: #262626;
+        @extend %roboto-700;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 7px;
+            height: 12px;
+            right: 0;
+            top: 9px;
+            background-image: url('../images/blog-arrow.svg');
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 370px;
+        height: 420px;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    }
+
+    &__box {
+        position: relative;
+    }
+
+    &__img {
+        height: 250px;
+        position: relative;
+    }
+
+    &__subtitle {
+        position: absolute;
+        bottom: -17px;
+        left: 28px;
+        background-color: #a3bbc8;
+        padding: 8px 31px;
+        border-radius: 17px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ffffff;
+        @extend %poppins-700;
+
+    }
+
+    &__content {
+        padding: 33px 27px 21px;
+        background-color: #ffffff;
+    }
+
+    &__text {
+        max-width: 291px;
+        height: 87px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.6px;
+        @extend %roboto-700;
+        padding-bottom: 17px;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 10px;
+    }
+
+    &__info {
+        font-size: 12px;
+        @extend %rubik-500;
+    }
+
+    &__info-data {
+        color: #222933;
+        margin-right: 30px;
+    }
+
+    &__info-author {
+        color: #222933;
+    }
+
+}
+
+.partners {
+    padding: 88px 0 91px;
+    background-color: #fef7f0;
+    height: 247px;
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+}

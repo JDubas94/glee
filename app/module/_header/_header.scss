@@ -1,0 +1,114 @@
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0 46px;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__list-item+.menu__list-item {
+        padding-left: 35px;
+    }
+
+    &__list-link {
+        font-size: 15px;
+        line-height: 12px;
+        color: $header;
+        @extend %rubik-500;
+        padding: 0 2px 1px;
+    }
+
+}
+
+.user-nav {
+    display: flex;
+    position: relative;
+
+    &__link,
+    &__btn {
+        position: relative;
+        margin-left: 21px;
+    }
+
+    &__link--search {
+        background-color: #edf1f4;
+        border-radius: 50%;
+        padding: 18px 18px 14px;
+    }
+
+    &__link--heart {
+        position: relative;
+        padding: 18px 30px 14px;
+    }
+
+    &__link--heart::before {
+        position: absolute;
+        content: "";
+        background: #fcd7b6;
+        width: 131%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+
+    &__link--cart {
+        display: block;
+        position: relative;
+        padding: 18px 30px 14px;
+    }
+
+    &__link--cart::before {
+        position: absolute;
+        content: "";
+        border-left: 1px solid #fde7d3;
+        width: 108%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        transform: scaleY(0.6);
+    }
+
+    &__link--cart::after {
+        position: absolute;
+        content: "";
+        background: #fcd7b6;
+        width: 105%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    &__num {
+        position: absolute;
+        width: 18px;
+        height: 16px;
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        color: $header;
+        right: 20px;
+        top: 11px;
+        text-align: center;
+        @extend %rubik-500;
+    }
+
+    &__btn {
+        border: none;
+        border-radius: 50%;
+        background-color: #a3bbc8;
+        padding: 15px;
+    }
+}

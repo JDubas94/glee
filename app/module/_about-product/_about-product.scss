@@ -1,0 +1,70 @@
+.about-product {
+    padding: 115px 0 40px;
+
+    &__inner {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        width: 870px;
+        height: 388px;
+        background-color: #feefe2;
+        position: relative;
+    }
+
+    &__images {
+        position: absolute;
+        top: -100px;
+        left: 156px;
+    }
+
+    &__content {
+        position: absolute;
+        max-width: 340px;
+        top: 87px;
+    }
+
+    &__content--left {
+        top: 95px;
+        right: 88px;
+    }
+
+    &__content--right {
+        top: 79px;
+        right: 65px;
+    }
+
+    &__title {
+        font-size: 26px;
+        line-height: 32px;
+        color: $subtitle;
+        @extend %roboto-700;
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        line-height: 24px;
+        color: $subtitle;
+        @extend %rubik-500;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        @extend %btn;
+        padding: 24px 100px 24px 27px;
+        color: #436372;
+        font-weight: bold;
+        position: relative;
+        border: 1px solid #b3b7b5;
+        padding: 21px 84px 23px 18px;
+        border-radius: 6px;
+
+        &::after {
+            content: url('../images/lamp-arrow.svg');
+            position: absolute;
+            right: 18px;
+            top: 26px;
+        }
+    }
+}
