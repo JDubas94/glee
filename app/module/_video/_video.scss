@@ -1,0 +1,31 @@
+
+.video {
+    height: 500px;
+    background-image: url('../images/video-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1050px){
+    .video{
+        height: 350px;
+    }
+}
+
+@media (max-width: 720px){
+    .video{
+        height: 220px;
+        img{
+            max-width: 70%;
+        }
+    }
+}
+@media (max-width: 450px){
+    .video{
+        height: 170px;
+    }
+}

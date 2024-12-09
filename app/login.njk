@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    {% include 'app/module/_header/_header.html' %}
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="top__inner">
+                    <h2 class="top__title">
+                        Log in
+                    </h2>
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Home</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link " href="#">Log in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="modal">
+            <div class="container modal__container">
+                <form class="modal__form" action="#">
+                    <label  class="modal__label" type="text">
+                        Username or email address *
+                        <input class="modal__input" type="text" required>
+                    </label>
+                    <label  class="modal__label" type="text">
+                        Password *
+                        <input class="modal__input" type="password">
+                    </label>
+                    <button class="modal__button">
+                        Login
+                    </button>
+                    <div class="modal__item">
+                        <label class="modal__label">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+                        <a class="modal__link" href="#">Lost your password?</a>
+                    </div>
+                </form>
+                <div class="modal-account">
+                    <h5 class="modal-account__title">
+                        Not registered? No problem
+                    </h5>
+                    <button class="modal-account__button">
+                        Create an account
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <div class="partners">
+            <div class="container">
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <img class="partners__img" src="images/partners/1.png" alt="partner images">
+                    </li>
+                    <li class="partners__item">
+                        <img class="partners__img" src="images/partners/2.png" alt="partner images">
+                    </li>
+                    <li class="partners__item">
+                        <img class="partners__img" src="images/partners/3.png" alt="partner images">
+                    </li>
+                    <li class="partners__item">
+                        <img class="partners__img" src="images/partners/4.png" alt="partner images">
+                    </li>
+                    <li class="partners__item">
+                        <img class="partners__img" src="images/partners/5.png" alt="partner images">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    {% include 'app/module/_footer/_footer.html' %}
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
