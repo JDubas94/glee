@@ -11,6 +11,10 @@
             margin-bottom: 10px;
         }
 
+        &__input--user {
+            right: 25px;
+        }
+
         &__input--email {
             top: 82px;
             right: 25px;
@@ -360,6 +364,9 @@
         &__items {
             grid-template-columns: repeat(1, 1fr);
         }
+        &__img{
+            width: 100%;
+        }
     }
 
     .blog-page {
@@ -439,7 +446,7 @@
     }
 
     .modal {
-        padding: 60px 0;
+        padding: 60px 10px 0;
         width: 100%;
     }
 
@@ -494,7 +501,7 @@
     }
 
     .product-detalis {
-
+        padding-bottom: 40px;
         &__content-title,
         &__content-price {
             font-size: 36px;

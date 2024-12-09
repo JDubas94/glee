@@ -49,6 +49,8 @@
 
 @media (max-width: 720px) {
     .design {
+        padding-top: 0;
+        padding-bottom: 60px;
         &__items {
             display: block;
         }
@@ -66,9 +68,5 @@
         &__item{
             background-image: none !important;
         }
-
-        // &__menu-item+.design__menu-item {
-        //     padding-left: 35px;
-        // }
     }
 }

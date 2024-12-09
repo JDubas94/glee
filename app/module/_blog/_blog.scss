@@ -144,6 +144,7 @@
 
 @media (max-width: 930px) {
     .blog-top {
+        padding: 60px 0;
         &__items {
             flex-wrap: wrap;
         }
@@ -181,7 +182,6 @@
 
 @media (max-width: 550px) {
     .blog-top {
-    padding: 60px 0;
         &__inner {
             display: block;
         }

@@ -184,8 +184,8 @@ body {
 
 @media (max-width: 720px){
     .menu-nav {
+        flex-wrap: wrap;
         &__item+.menu-nav__item {
-            margin-left: 35px;
              margin-bottom: 20px;
          }
     }
@@ -198,7 +198,18 @@ body {
     padding-bottom: 15px;
     }
     .menu-nav {
-        flex-wrap: wrap;
+        &__item+.menu-nav__item {
+            margin-left: 62px;
+         }
+    }
+    
+}
+
+@media (max-width: 350px) {
+    .menu-nav {
+        &__item+.menu-nav__item {
+            margin-left: 35px;
+         }
     }
     
 }

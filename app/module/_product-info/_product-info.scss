@@ -248,9 +248,9 @@
             grid-gap: 20px;
         }
 
-        &__item {
-            width: 100%;
-        }
+        // &__item {
+        //     width: 100%;
+        // }
 
         &__menu-item+.products__menu-item {
             margin-bottom: 30px;
@@ -293,7 +293,7 @@
     }
 }
 
-@media(max-width: 550px) {
+@media(max-width: 600px) {
     .products {
         .products__items {
             display: flex;
